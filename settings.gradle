@@ -1,27 +1,31 @@
-rootProject.name = 'oo-design'
+rootProject.name = 'ood-interview'
 
-// Include all project modules mapped to actual directories
-include 'atm'
-include 'blackjack'
-include 'elevator'
-include 'filesearch'
-include 'grocerystore'
-include 'movieticket'
-include 'parkinglot'
-include 'restaurant'
-include 'shippinglocker'
-include 'tictactoe'
-include 'vendingmachine'
+// EASY PROBLEMS
+include 'easy:tictactoe'
+include 'easy:vendingmachine'
+include 'easy:blackjack'
 
-// Map to actual directories
-project(':atm').projectDir = file('atm')
-project(':blackjack').projectDir = file('blackjack')
-project(':elevator').projectDir = file('elevator_system')
-project(':filesearch').projectDir = file('file_search')
-project(':grocerystore').projectDir = file('grocery_store')
-project(':movieticket').projectDir = file('movie_ticket')
-project(':parkinglot').projectDir = file('parking_lot')
-project(':restaurant').projectDir = file('restaurant')
-project(':shippinglocker').projectDir = file('shipping_locker')
-project(':tictactoe').projectDir = file('tic_tac_toe')
-project(':vendingmachine').projectDir = file('vending_machine')
+// MEDIUM PROBLEMS
+include 'medium:atm'
+include 'medium:parkinglot'
+include 'medium:movieticket'
+include 'medium:restaurant'
+include 'medium:filesearch'
+include 'medium:grocerystore'
+include 'medium:shippinglocker'
+include 'medium:elevator'
+
+// Map to actual directories - Easy
+project(':easy:tictactoe').projectDir = file('easy/tic_tac_toe')
+project(':easy:vendingmachine').projectDir = file('easy/vending_machine')
+project(':easy:blackjack').projectDir = file('easy/blackjack')
+
+// Map to actual directories - Medium
+project(':medium:atm').projectDir = file('medium/atm')
+project(':medium:parkinglot').projectDir = file('medium/parking_lot')
+project(':medium:movieticket').projectDir = file('medium/movie_ticket')
+project(':medium:restaurant').projectDir = file('medium/restaurant')
+project(':medium:filesearch').projectDir = file('medium/file_search')
+project(':medium:grocerystore').projectDir = file('medium/grocery_store')
+project(':medium:shippinglocker').projectDir = file('medium/shipping_locker')
+project(':medium:elevator').projectDir = file('medium/elevator_system')
